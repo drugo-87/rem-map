@@ -4,6 +4,7 @@ import xarray as xr
 import pandas as pd
 import scipy
 import matplotlib as mpl
+import matplotlib.pyplot as plt
 import argparse
 import geopandas as gpd
 import cartopy.crs as ccrs
@@ -514,11 +515,12 @@ class MeteoMap:
 
 
 if __name__ == "__main__":
+    print("Running...")
     meteoMap = MeteoMap(
         meteo_set,
-        parsed_variable=variable,
+        parsed_variable=args.variable,
         input_dem=dem,
-        parsed_date=date,
+        parsed_date=args.date,
         input_gdf=df_geo,
     )
     (
@@ -533,3 +535,4 @@ if __name__ == "__main__":
     )
     lev_norm, cmap, norm = meteoMap.palette_attribute()
     meteoMap.main(station_coordinates, grid_longitude, grid_latitude, field)
+    print("Done!")
