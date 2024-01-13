@@ -52,6 +52,9 @@ if args.variable not in variabili:
 
 ##########
 # Reading input
+if not os.path.isdir(f'maps/{args.variable}/{args.date}/'): 
+    os.makedirs(f'maps/{args.variable}/{args.date}/')
+
 try:
     dem = xr.open_dataset(f"data/geo-data/dem100.nc")
 except:
@@ -310,7 +313,7 @@ class MeteoMap:
         #     fmt=" {:.0f} ".format,  # Labes as integers, with some extra space.
         # )
         fig.savefig(
-            f"maps/mappa_{self.name}_{self.date}.png",
+            f"maps/{args.variable}/{args.date}/mappa_{self.name}_{self.date}.png",
             bbox_inches="tight",
             transparent=False,
         )
