@@ -5501,3 +5501,17 @@ Running...
 Done!
 
 Tue Feb 27 18:20:04 CET 2024
+20240227_1822
+20240227_1820
+/volume1/web/dati_rete/20240227/dati_20240227_1820.csv
+Running...
+Done!
+
+Tue Feb 27 18:30:03 CET 2024
+20240227_1832
+20240227_1830
+/volume1/web/dati_rete/20240227/dati_20240227_1830.csv
+Running...
+Done!
+
+Tue Feb 27 18:40:03 CET 2024
