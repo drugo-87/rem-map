@@ -31360,3 +31360,31 @@ Running...
 Done!
 
 Tue Feb 27 18:40:03 CET 2024
+20240227_1841
+20240227_1840
+/volume1/web/dati_rete/20240227/dati_20240227_1840.csv
+Running...
+Done!
+
+Tue Feb 27 18:50:03 CET 2024
+20240227_1851
+20240227_1850
+/volume1/web/dati_rete/20240227/dati_20240227_1850.csv
+Running...
+Done!
+
+Tue Feb 27 19:00:03 CET 2024
+20240227_1901
+20240227_1900
+/volume1/web/dati_rete/20240227/dati_20240227_1900.csv
+Running...
+Done!
+
+Tue Feb 27 19:10:04 CET 2024
+20240227_1911
+20240227_1910
+/volume1/web/dati_rete/20240227/dati_20240227_1910.csv
+Running...
+Done!
+
+Tue Feb 27 19:20:04 CET 2024
