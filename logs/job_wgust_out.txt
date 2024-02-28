@@ -10821,3 +10821,609 @@ Running...
 Done!
 
 Tue Feb 27 19:20:04 CET 2024
+20240227_1922
+20240227_1920
+/volume1/web/dati_rete/20240227/dati_20240227_1920.csv
+Running...
+Done!
+
+Tue Feb 27 19:30:04 CET 2024
+20240227_1932
+20240227_1930
+/volume1/web/dati_rete/20240227/dati_20240227_1930.csv
+Running...
+Done!
+
+Tue Feb 27 19:40:03 CET 2024
+20240227_1942
+20240227_1940
+/volume1/web/dati_rete/20240227/dati_20240227_1940.csv
+Running...
+Done!
+
+Tue Feb 27 19:50:04 CET 2024
+20240227_1952
+20240227_1950
+/volume1/web/dati_rete/20240227/dati_20240227_1950.csv
+Running...
+Done!
+
+Tue Feb 27 20:00:04 CET 2024
+20240227_2002
+20240227_2000
+/volume1/web/dati_rete/20240227/dati_20240227_2000.csv
+Running...
+Done!
+
+Tue Feb 27 20:10:04 CET 2024
+20240227_2012
+20240227_2010
+/volume1/web/dati_rete/20240227/dati_20240227_2010.csv
+Running...
+Done!
+
+Tue Feb 27 20:20:03 CET 2024
+20240227_2022
+20240227_2020
+/volume1/web/dati_rete/20240227/dati_20240227_2020.csv
+Running...
+Done!
+
+Tue Feb 27 20:30:03 CET 2024
+20240227_2032
+20240227_2030
+/volume1/web/dati_rete/20240227/dati_20240227_2030.csv
+Running...
+Done!
+
+Tue Feb 27 20:40:04 CET 2024
+20240227_2042
+20240227_2040
+/volume1/web/dati_rete/20240227/dati_20240227_2040.csv
+Running...
+Done!
+
+Tue Feb 27 20:50:04 CET 2024
+20240227_2052
+20240227_2050
+/volume1/web/dati_rete/20240227/dati_20240227_2050.csv
+Running...
+Done!
+
+Tue Feb 27 21:00:06 CET 2024
+20240227_2102
+20240227_2100
+/volume1/web/dati_rete/20240227/dati_20240227_2100.csv
+Running...
+Done!
+
+Tue Feb 27 21:10:05 CET 2024
+20240227_2112
+20240227_2110
+/volume1/web/dati_rete/20240227/dati_20240227_2110.csv
+Running...
+Done!
+
+Tue Feb 27 21:20:03 CET 2024
+20240227_2122
+20240227_2120
+/volume1/web/dati_rete/20240227/dati_20240227_2120.csv
+Running...
+Done!
+
+Tue Feb 27 21:30:03 CET 2024
+20240227_2132
+20240227_2130
+/volume1/web/dati_rete/20240227/dati_20240227_2130.csv
+Running...
+Done!
+
+Tue Feb 27 21:40:03 CET 2024
+20240227_2142
+20240227_2140
+/volume1/web/dati_rete/20240227/dati_20240227_2140.csv
+Running...
+Done!
+
+Tue Feb 27 21:50:02 CET 2024
+20240227_2152
+20240227_2150
+/volume1/web/dati_rete/20240227/dati_20240227_2150.csv
+Running...
+Done!
+
+Tue Feb 27 22:00:02 CET 2024
+20240227_2202
+20240227_2200
+/volume1/web/dati_rete/20240227/dati_20240227_2200.csv
+Running...
+Done!
+
+Tue Feb 27 22:10:04 CET 2024
+20240227_2212
+20240227_2210
+/volume1/web/dati_rete/20240227/dati_20240227_2210.csv
+Running...
+Done!
+
+Tue Feb 27 22:20:04 CET 2024
+20240227_2222
+20240227_2220
+/volume1/web/dati_rete/20240227/dati_20240227_2220.csv
+Running...
+Done!
+
+Tue Feb 27 22:30:04 CET 2024
+20240227_2232
+20240227_2230
+/volume1/web/dati_rete/20240227/dati_20240227_2230.csv
+Running...
+Done!
+
+Tue Feb 27 22:40:04 CET 2024
+20240227_2242
+20240227_2240
+/volume1/web/dati_rete/20240227/dati_20240227_2240.csv
+Running...
+Done!
+
+Tue Feb 27 22:50:03 CET 2024
+20240227_2252
+20240227_2250
+/volume1/web/dati_rete/20240227/dati_20240227_2250.csv
+Running...
+Done!
+
+Tue Feb 27 23:00:03 CET 2024
+20240227_2302
+20240227_2300
+/volume1/web/dati_rete/20240227/dati_20240227_2300.csv
+Running...
+Done!
+
+Tue Feb 27 23:10:05 CET 2024
+20240227_2312
+20240227_2310
+/volume1/web/dati_rete/20240227/dati_20240227_2310.csv
+Running...
+Done!
+
+Tue Feb 27 23:20:06 CET 2024
+20240227_2322
+20240227_2320
+/volume1/web/dati_rete/20240227/dati_20240227_2320.csv
+Running...
+Done!
+
+Tue Feb 27 23:30:03 CET 2024
+20240227_2332
+20240227_2330
+/volume1/web/dati_rete/20240227/dati_20240227_2330.csv
+Running...
+Done!
+
+Tue Feb 27 23:40:03 CET 2024
+20240227_2342
+20240227_2340
+/volume1/web/dati_rete/20240227/dati_20240227_2340.csv
+Running...
+Done!
+
+Tue Feb 27 23:50:03 CET 2024
+20240227_2352
+20240227_2350
+/volume1/web/dati_rete/20240227/dati_20240227_2350.csv
+Running...
+Done!
+
+Wed Feb 28 00:00:04 CET 2024
+20240228_0002
+20240228_0000
+/volume1/web/dati_rete/20240228/dati_20240228_0000.csv
+Running...
+Done!
+
+Wed Feb 28 00:10:04 CET 2024
+20240228_0012
+20240228_0010
+/volume1/web/dati_rete/20240228/dati_20240228_0010.csv
+Running...
+Done!
+
+Wed Feb 28 00:20:04 CET 2024
+20240228_0022
+20240228_0020
+/volume1/web/dati_rete/20240228/dati_20240228_0020.csv
+Running...
+Done!
+
+Wed Feb 28 00:30:03 CET 2024
+20240228_0032
+20240228_0030
+/volume1/web/dati_rete/20240228/dati_20240228_0030.csv
+Running...
+Done!
+
+Wed Feb 28 00:40:03 CET 2024
+20240228_0042
+20240228_0040
+/volume1/web/dati_rete/20240228/dati_20240228_0040.csv
+Running...
+Done!
+
+Wed Feb 28 00:50:03 CET 2024
+20240228_0052
+20240228_0050
+/volume1/web/dati_rete/20240228/dati_20240228_0050.csv
+Running...
+Done!
+
+Wed Feb 28 01:00:04 CET 2024
+
+Wed Feb 28 01:10:04 CET 2024
+20240228_0112
+20240228_0110
+/volume1/web/dati_rete/20240228/dati_20240228_0110.csv
+Running...
+Done!
+
+Wed Feb 28 01:20:04 CET 2024
+20240228_0122
+20240228_0120
+/volume1/web/dati_rete/20240228/dati_20240228_0120.csv
+Running...
+Done!
+
+Wed Feb 28 01:30:03 CET 2024
+20240228_0132
+20240228_0130
+/volume1/web/dati_rete/20240228/dati_20240228_0130.csv
+Running...
+Done!
+
+Wed Feb 28 01:40:04 CET 2024
+20240228_0142
+20240228_0140
+/volume1/web/dati_rete/20240228/dati_20240228_0140.csv
+Running...
+Done!
+
+Wed Feb 28 01:50:04 CET 2024
+20240228_0152
+20240228_0150
+/volume1/web/dati_rete/20240228/dati_20240228_0150.csv
+Running...
+Done!
+
+Wed Feb 28 02:00:04 CET 2024
+20240228_0202
+20240228_0200
+/volume1/web/dati_rete/20240228/dati_20240228_0200.csv
+Running...
+Done!
+
+Wed Feb 28 02:10:03 CET 2024
+20240228_0212
+20240228_0210
+/volume1/web/dati_rete/20240228/dati_20240228_0210.csv
+Running...
+Done!
+
+Wed Feb 28 02:20:04 CET 2024
+20240228_0222
+20240228_0220
+/volume1/web/dati_rete/20240228/dati_20240228_0220.csv
+Running...
+Done!
+
+Wed Feb 28 02:30:04 CET 2024
+20240228_0232
+20240228_0230
+/volume1/web/dati_rete/20240228/dati_20240228_0230.csv
+Running...
+Done!
+
+Wed Feb 28 02:40:04 CET 2024
+20240228_0242
+20240228_0240
+/volume1/web/dati_rete/20240228/dati_20240228_0240.csv
+Running...
+Done!
+
+Wed Feb 28 02:50:02 CET 2024
+20240228_0252
+20240228_0250
+/volume1/web/dati_rete/20240228/dati_20240228_0250.csv
+Running...
+Done!
+
+Wed Feb 28 03:00:04 CET 2024
+20240228_0302
+20240228_0300
+/volume1/web/dati_rete/20240228/dati_20240228_0300.csv
+Running...
+Done!
+
+Wed Feb 28 03:10:03 CET 2024
+20240228_0312
+20240228_0310
+/volume1/web/dati_rete/20240228/dati_20240228_0310.csv
+Running...
+Done!
+
+Wed Feb 28 03:20:03 CET 2024
+20240228_0322
+20240228_0320
+/volume1/web/dati_rete/20240228/dati_20240228_0320.csv
+Running...
+Done!
+
+Wed Feb 28 03:30:03 CET 2024
+20240228_0332
+20240228_0330
+/volume1/web/dati_rete/20240228/dati_20240228_0330.csv
+Running...
+Done!
+
+Wed Feb 28 03:40:03 CET 2024
+20240228_0342
+20240228_0340
+/volume1/web/dati_rete/20240228/dati_20240228_0340.csv
+Running...
+Done!
+
+Wed Feb 28 03:50:03 CET 2024
+20240228_0352
+20240228_0350
+/volume1/web/dati_rete/20240228/dati_20240228_0350.csv
+Running...
+Done!
+
+Wed Feb 28 04:00:05 CET 2024
+20240228_0402
+20240228_0400
+/volume1/web/dati_rete/20240228/dati_20240228_0400.csv
+Running...
+Done!
+
+Wed Feb 28 04:10:03 CET 2024
+20240228_0412
+20240228_0410
+/volume1/web/dati_rete/20240228/dati_20240228_0410.csv
+Running...
+Done!
+
+Wed Feb 28 04:20:05 CET 2024
+20240228_0422
+20240228_0420
+/volume1/web/dati_rete/20240228/dati_20240228_0420.csv
+Running...
+Done!
+
+Wed Feb 28 04:30:04 CET 2024
+20240228_0432
+20240228_0430
+/volume1/web/dati_rete/20240228/dati_20240228_0430.csv
+Running...
+Done!
+
+Wed Feb 28 04:40:03 CET 2024
+20240228_0442
+20240228_0440
+/volume1/web/dati_rete/20240228/dati_20240228_0440.csv
+Running...
+Done!
+
+Wed Feb 28 04:50:03 CET 2024
+20240228_0452
+20240228_0450
+/volume1/web/dati_rete/20240228/dati_20240228_0450.csv
+Running...
+Done!
+
+Wed Feb 28 05:00:06 CET 2024
+20240228_0502
+20240228_0500
+/volume1/web/dati_rete/20240228/dati_20240228_0500.csv
+Running...
+Done!
+
+Wed Feb 28 05:10:02 CET 2024
+20240228_0512
+20240228_0510
+/volume1/web/dati_rete/20240228/dati_20240228_0510.csv
+Running...
+Done!
+
+Wed Feb 28 05:20:04 CET 2024
+20240228_0522
+20240228_0520
+/volume1/web/dati_rete/20240228/dati_20240228_0520.csv
+Running...
+Done!
+
+Wed Feb 28 05:30:03 CET 2024
+20240228_0532
+20240228_0530
+/volume1/web/dati_rete/20240228/dati_20240228_0530.csv
+Running...
+Done!
+
+Wed Feb 28 05:40:03 CET 2024
+20240228_0542
+20240228_0540
+/volume1/web/dati_rete/20240228/dati_20240228_0540.csv
+Running...
+Done!
+
+Wed Feb 28 05:50:03 CET 2024
+20240228_0552
+20240228_0550
+/volume1/web/dati_rete/20240228/dati_20240228_0550.csv
+Running...
+Done!
+
+Wed Feb 28 06:00:03 CET 2024
+20240228_0602
+20240228_0600
+/volume1/web/dati_rete/20240228/dati_20240228_0600.csv
+Running...
+Done!
+
+Wed Feb 28 06:10:04 CET 2024
+20240228_0612
+20240228_0610
+/volume1/web/dati_rete/20240228/dati_20240228_0610.csv
+Running...
+Done!
+
+Wed Feb 28 06:20:03 CET 2024
+20240228_0622
+20240228_0620
+/volume1/web/dati_rete/20240228/dati_20240228_0620.csv
+Running...
+Done!
+
+Wed Feb 28 06:30:03 CET 2024
+20240228_0632
+20240228_0630
+/volume1/web/dati_rete/20240228/dati_20240228_0630.csv
+Running...
+Done!
+
+Wed Feb 28 06:40:04 CET 2024
+20240228_0642
+20240228_0640
+/volume1/web/dati_rete/20240228/dati_20240228_0640.csv
+Running...
+Done!
+
+Wed Feb 28 06:50:04 CET 2024
+20240228_0652
+20240228_0650
+/volume1/web/dati_rete/20240228/dati_20240228_0650.csv
+Running...
+Done!
+
+Wed Feb 28 07:00:02 CET 2024
+20240228_0702
+20240228_0700
+/volume1/web/dati_rete/20240228/dati_20240228_0700.csv
+Running...
+Done!
+
+Wed Feb 28 07:10:04 CET 2024
+20240228_0712
+20240228_0710
+/volume1/web/dati_rete/20240228/dati_20240228_0710.csv
+Running...
+Done!
+
+Wed Feb 28 07:20:06 CET 2024
+20240228_0722
+20240228_0720
+/volume1/web/dati_rete/20240228/dati_20240228_0720.csv
+Running...
+Done!
+
+Wed Feb 28 07:30:05 CET 2024
+20240228_0732
+20240228_0730
+/volume1/web/dati_rete/20240228/dati_20240228_0730.csv
+Running...
+Done!
+
+Wed Feb 28 07:40:05 CET 2024
+20240228_0742
+20240228_0740
+/volume1/web/dati_rete/20240228/dati_20240228_0740.csv
+Running...
+Done!
+
+Wed Feb 28 07:50:04 CET 2024
+20240228_0752
+20240228_0750
+/volume1/web/dati_rete/20240228/dati_20240228_0750.csv
+Running...
+Done!
+
+Wed Feb 28 08:00:06 CET 2024
+20240228_0802
+20240228_0800
+/volume1/web/dati_rete/20240228/dati_20240228_0800.csv
+Running...
+Done!
+
+Wed Feb 28 08:10:05 CET 2024
+20240228_0812
+20240228_0810
+/volume1/web/dati_rete/20240228/dati_20240228_0810.csv
+Running...
+Done!
+
+Wed Feb 28 08:20:04 CET 2024
+20240228_0822
+20240228_0820
+/volume1/web/dati_rete/20240228/dati_20240228_0820.csv
+Running...
+Done!
+
+Wed Feb 28 08:30:05 CET 2024
+20240228_0832
+20240228_0830
+/volume1/web/dati_rete/20240228/dati_20240228_0830.csv
+Running...
+Done!
+
+Wed Feb 28 08:40:04 CET 2024
+20240228_0842
+20240228_0840
+/volume1/web/dati_rete/20240228/dati_20240228_0840.csv
+Running...
+Done!
+
+Wed Feb 28 08:50:04 CET 2024
+20240228_0852
+20240228_0850
+/volume1/web/dati_rete/20240228/dati_20240228_0850.csv
+Running...
+Done!
+
+Wed Feb 28 09:00:04 CET 2024
+20240228_0902
+20240228_0900
+/volume1/web/dati_rete/20240228/dati_20240228_0900.csv
+Running...
+Done!
+
+Wed Feb 28 09:10:03 CET 2024
+20240228_0912
+20240228_0910
+/volume1/web/dati_rete/20240228/dati_20240228_0910.csv
+Running...
+Done!
+
+Wed Feb 28 09:20:04 CET 2024
+20240228_0922
+20240228_0920
+/volume1/web/dati_rete/20240228/dati_20240228_0920.csv
+Running...
+
+Wed Feb 28 09:30:03 CET 2024
+20240228_0932
+20240228_0930
+/volume1/web/dati_rete/20240228/dati_20240228_0930.csv
+Running...
+
+Wed Feb 28 09:40:04 CET 2024
+20240228_0942
+20240228_0940
+/volume1/web/dati_rete/20240228/dati_20240228_0940.csv
+Running...
+
+Wed Feb 28 09:50:03 CET 2024
+20240228_0952
+20240228_0950
+/volume1/web/dati_rete/20240228/dati_20240228_0950.csv
+Running...
+Done!

@@ -79,7 +79,7 @@ except:
 fname = f"data/geo-data/comuni_reggio_Emilia.shp"
 
 temp = {
-    'name': 'temp_val',
+    'name': 'Temperatura',
     'levels': np.array([-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]),
     'colors': ['#4D005B', '#53006D', '#560088', '#570096', '#5400A8', '#4C00BF', '#4200D1', '#2E00E8', '#2100FA', '#000FFF', 
             '#0027FF', '#0046FF', '#0064FF', '#007CFF', '#009BFF', '#00B9FF', '#00D1FF', '#00F0FF', '#00FAF0', '#01F3DB',
@@ -92,21 +92,21 @@ temp = {
     'over_c' : "#72299B",
     'space': 2,
     'halving_h' : 5000}
-# tempwb = {
-#     'name': 'temp_wet_bulb',
-#     'levels': np.array([-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]),
-#     'colors': ['#4D005B', '#53006D', '#560088', '#570096', '#5400A8', '#4C00BF', '#4200D1', '#2E00E8', '#2100FA', '#000FFF', 
-#             '#0027FF', '#0046FF', '#0064FF', '#007CFF', '#009BFF', '#00B9FF', '#00D1FF', '#00F0FF', '#00FAF0', '#01F3DB',
-#             '#02EABE', '#03E1A0', '#04DA8B', '#05D16E', '#06C850', '#07C13B', '#08B81E', '#2CBE0D', '#49C70B', '#66D009', 
-#             '#7CD708', '#99E006', '#AFE605', '#CCEF03', '#E9F801', '#FFFF00', '#FFF400', '#FFE900', '#FFE100', '#FFD600', 
-#             '#FFCB00', '#FFC300', '#FFB800', '#FFAD00', '#FFA500', '#FF9100', '#FF7D00', '#FF6E00', '#FF5A00', '#FF4600', 
-#             '#FF3700', '#FF2300', '#FF0F00', '#EB0010', '#DB001D', '#C7002D', '#B3003E', '#A3004A', '#8F005B', '#7B006B', '#6B0078'],
-#     'offset': 273,
-#     'lower_c': "#41004d",
-#     'over_c' : "#72299B",
-#     'space': 2}
+tempwb = {
+    'name': 'Temperatura bulbo umido',
+    'levels': np.array([-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]),
+    'colors': ['#4D005B', '#53006D', '#560088', '#570096', '#5400A8', '#4C00BF', '#4200D1', '#2E00E8', '#2100FA', '#000FFF', 
+            '#0027FF', '#0046FF', '#0064FF', '#007CFF', '#009BFF', '#00B9FF', '#00D1FF', '#00F0FF', '#00FAF0', '#01F3DB',
+            '#02EABE', '#03E1A0', '#04DA8B', '#05D16E', '#06C850', '#07C13B', '#08B81E', '#2CBE0D', '#49C70B', '#66D009', 
+            '#7CD708', '#99E006', '#AFE605', '#CCEF03', '#E9F801', '#FFFF00', '#FFF400', '#FFE900', '#FFE100', '#FFD600', 
+            '#FFCB00', '#FFC300', '#FFB800', '#FFAD00', '#FFA500', '#FF9100', '#FF7D00', '#FF6E00', '#FF5A00', '#FF4600', 
+            '#FF3700', '#FF2300', '#FF0F00', '#EB0010', '#DB001D', '#C7002D', '#B3003E', '#A3004A', '#8F005B', '#7B006B', '#6B0078'],
+    'offset': 273,
+    'lower_c': "#41004d",
+    'over_c' : "#72299B",
+    'space': 2}
 prp = {
-    'name': 'rain_day', 
+    'name': 'Precipitazione', 
     'levels': np.array([0.2, 1, 2, 5, 10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300]),
     'colors': ['#D6FFFB', '#D6E1FF', '#B4CAFC', '#8DB2FF', '#859BFF', '#636FFF', '#0160FF' , '#019595', '#00C635', '#66FD00', '#96FF00', '#C6FF30', '#FFFF00', '#FFC600', '#FEA201', '#FF0000', '#B200FF', '#FF00DC'],
     'offset': 0,
@@ -115,7 +115,7 @@ prp = {
     'space': 301,
     'halving_h' : 10000}
 wgust = {
-    'name': 'wind_gust', 
+    'name': 'Raffica', 
     'levels': np.array([1,3,7,12,20,30,40,51,63,76,88,103,117,150]),
     'colors': ["#EBF5FF", "#BAE9FF", "#77C6FF", "#5EFFFD", "#A9E786", "#53D559", "#31AC2D", "#FFBD11", "#FD9A00", "#FF4522", "#A70000", "#FF98FF", "#FD4CFF", "#9E30A0"],
     'offset': 0,
@@ -123,16 +123,16 @@ wgust = {
     'over_c' : "#FFFF00",
     'space': 120,
     'halving_h' : 10000}
-# wgustmax = {
-#     'name': 'wind_gust_max', 
-#     'levels': np.array([1,3,7,12,20,30,40,51,63,76,88,103,117,150]),
-#     'colors': ["#EBF5FF", "#BAE9FF", "#77C6FF", "#5EFFFD", "#A9E786", "#53D559", "#31AC2D", "#FFBD11", "#FD9A00", "#FF4522", "#A70000", "#FF98FF", "#FD4CFF", "#9E30A0"],
-#     'offset': 0,
-#     'lower_c': "#FFFFFF",
-#     'over_c' : "#FFFF00",
-#     'space': 120}
+wgustmax = {
+    'name': 'Raffica massima', 
+    'levels': np.array([1,3,7,12,20,30,40,51,63,76,88,103,117,150]),
+    'colors': ["#EBF5FF", "#BAE9FF", "#77C6FF", "#5EFFFD", "#A9E786", "#53D559", "#31AC2D", "#FFBD11", "#FD9A00", "#FF4522", "#A70000", "#FF98FF", "#FD4CFF", "#9E30A0"],
+    'offset': 0,
+    'lower_c': "#FFFFFF",
+    'over_c' : "#FFFF00",
+    'space': 120}
 rh = {
-    'name': 'rel_hum', 
+    'name': 'Umidità relativa', 
     'levels': np.array([5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]),
     'colors': ["#E8CDEC", "#DF9FED", "#CE66D9", "#D060AA", "#D66B63", "#E27F21", "#EA9518", "#F2B246", "#FFD694", "#FFF3E5", "#F8FFFF", "#E1FFFF", "#C0FFFD", "#A5FCF6", "#81E7FD", "#5CCAFB", "#3FA4FE", "#125EFF", "#000EFF"],
     'offset': 0,
@@ -143,18 +143,18 @@ rh = {
 
 meteo_set = {
     "temp_val": temp,
-    "temp_wet_bulb": temp,
+    "temp_wet_bulb": tempwb,
     "rain_day": prp,
     "wind_gust": wgust,
-    "wind_gust_max": wgust,
+    "wind_gust_max": wgustmax,
     "rel_hum": rh,
 }
 
 
 class MeteoMap:
     def __init__(self, meteo_set, parsed_variable, input_dem, parsed_date, input_gdf):
-        # self.name = meteo_set[parsed_variable]["name"]
         self.name = parsed_variable
+        self.long_name = meteo_set[parsed_variable]["name"]
         self.levels = meteo_set[parsed_variable]["levels"]
         self.colors = meteo_set[parsed_variable]["colors"]
         self.offset = meteo_set[parsed_variable]["offset"]
@@ -288,8 +288,6 @@ class MeteoMap:
             ),  # self.levels,
             vmin=self.levels[0],
             vmax=self.levels[-1],  # filled_c.levels,
-            cmap='white',
-            # colors=["white"],
             linewidths=0.5,
             extend="both",
         )
@@ -308,9 +306,9 @@ class MeteoMap:
         filled_c.cmap.set_under(self.lower_c, alpha=1)
         filled_c.cmap.set_over(self.over_c, alpha=1)
 
-        fig.colorbar(
-            filled_c, orientation="vertical", extend="both"
-        ).set_ticklabels(self.levels) # ,spacing='uniform',ticks= levels)
+        cbar = fig.colorbar(
+            filled_c, orientation="vertical", extend="both",ticks=self.levels
+        ).set_ticklabels(list(self.levels)) # ,spacing='uniform',ticks= levels)
         # fig.colorbar.set_tick
 
         for t in range(len(station_coordinates)):
@@ -320,6 +318,7 @@ class MeteoMap:
                 self.gdf[self.name].iloc[t],
                 horizontalalignment="right",
                 transform=ccrs.epsg(32632),
+                color='w'
             )
 
         plt.text(
@@ -338,7 +337,7 @@ class MeteoMap:
             horizontalalignment="right",
             transform=ccrs.epsg(32632),
         )
-        plt.title((self.name+'\n'+self.date+'\nwww.reggioemiliameteo.it')).set_size(14)
+        plt.title((self.long_name+'\n'+self.date+'\nwww.reggioemiliameteo.it')).set_size(14)
         logo = image.imread('/volume1/web/images/reggioemiliameteo-logo-mappe.jpg')
         imagebox = OffsetImage(logo, zoom = 0.45)
         ab = AnnotationBbox(imagebox, (644400, 4.90209e06), frameon = False)

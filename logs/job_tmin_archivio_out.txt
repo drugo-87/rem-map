@@ -40,3 +40,10 @@ Mon Feb 26 23:55:04 CET 2024
 /volume1/web/dati_rete/20240226/dati_20240226_2350.csv
 Running...
 Done!
+
+Tue Feb 27 23:55:04 CET 2024
+20240227_2355
+20240227_2350
+/volume1/web/dati_rete/20240227/dati_20240227_2350.csv
+Running...
+Done!
