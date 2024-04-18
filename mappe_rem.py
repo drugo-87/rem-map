@@ -91,7 +91,7 @@ temp = {
     'lower_c': "#41004d",
     'over_c' : "#72299B",
     'space': 2,
-    'halving_h' : 5000}
+    'halving_h' : 3000}
 tempwb = {
     'name': 'Temperatura bulbo umido',
     'levels': np.array([-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]),
@@ -104,7 +104,8 @@ tempwb = {
     'offset': 273,
     'lower_c': "#41004d",
     'over_c' : "#72299B",
-    'space': 2}
+    'space': 2,
+    'halving_h' : 3000}
 prp = {
     'name': 'Precipitazione', 
     'levels': np.array([0.2, 1, 2, 5, 10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300]),
@@ -113,7 +114,7 @@ prp = {
     'lower_c': "#FFFFFF",
     'over_c' : "#FF00FF",
     'space': 301,
-    'halving_h' : 10000}
+    'halving_h' : 5000}
 wgust = {
     'name': 'Raffica', 
     'levels': np.array([1,3,7,12,20,30,40,51,63,76,88,103,117,150]),
@@ -122,7 +123,7 @@ wgust = {
     'lower_c': "#FFFFFF",
     'over_c' : "#FFFF00",
     'space': 120,
-    'halving_h' : 10000}
+    'halving_h' : 5000}
 wgustmax = {
     'name': 'Raffica massima', 
     'levels': np.array([1,3,7,12,20,30,40,51,63,76,88,103,117,150]),
@@ -130,7 +131,8 @@ wgustmax = {
     'offset': 0,
     'lower_c': "#FFFFFF",
     'over_c' : "#FFFF00",
-    'space': 120}
+    'space': 120,
+    'halving_h' : 5000}
 rh = {
     'name': 'Umidità relativa', 
     'levels': np.array([5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]),
@@ -139,7 +141,7 @@ rh = {
     'lower_c': "#D6CCD7",
     'over_c' : "#FFFF00",
     'space': 101,
-    'halving_h' : 10000}
+    'halving_h' : 5000}
 
 meteo_set = {
     "temp_val": temp,
@@ -288,6 +290,7 @@ class MeteoMap:
             ),  # self.levels,
             vmin=self.levels[0],
             vmax=self.levels[-1],  # filled_c.levels,
+            colors=["white"],
             linewidths=0.5,
             extend="both",
         )
@@ -318,7 +321,7 @@ class MeteoMap:
                 self.gdf[self.name].iloc[t],
                 horizontalalignment="right",
                 transform=ccrs.epsg(32632),
-                color='w'
+                #color='w'
             )
 
         plt.text(
@@ -337,7 +340,7 @@ class MeteoMap:
             horizontalalignment="right",
             transform=ccrs.epsg(32632),
         )
-        plt.title((self.long_name+'\n'+self.date+'\nwww.reggioemiliameteo.it')).set_size(14)
+        plt.title((self.long_name+' '+self.date+'\nwww.reggioemiliameteo.it')).set_size(14)
         logo = image.imread('/volume1/web/images/reggioemiliameteo-logo-mappe.jpg')
         imagebox = OffsetImage(logo, zoom = 0.45)
         ab = AnnotationBbox(imagebox, (644400, 4.90209e06), frameon = False)

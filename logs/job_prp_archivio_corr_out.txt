@@ -1,0 +1,12 @@
+
+Fri Mar 15 16:37:08 CET 2024
+20240315_2350
+20240315_2350
+Something went wrong, can't find data file
+
+Fri Mar 15 16:46:19 CET 2024
+20240314_2350
+20240314_2350
+/volume1/web/dati_rete/20240314/dati_20240314_2350.csv
+Running...
+Done!

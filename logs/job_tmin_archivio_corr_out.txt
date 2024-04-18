@@ -1,0 +1,35 @@
+
+Fri Mar 15 17:33:19 CET 2024
+20240310_2350
+20240310_2350
+/volume1/web/dati_rete/20240310/dati_20240310_2350.csv
+Running...
+Done!
+
+Fri Mar 15 17:41:00 CET 2024
+20240310_2350
+20240310_2350
+/volume1/web/dati_rete/20240310/dati_20240310_2350.csv
+Running...
+Done!
+
+Fri Mar 15 17:46:03 CET 2024
+20240311_2350
+20240311_2350
+/volume1/web/dati_rete/20240311/dati_20240311_2350.csv
+Running...
+Done!
+
+Fri Mar 15 17:55:26 CET 2024
+20240312_2350
+20240312_2350
+/volume1/web/dati_rete/20240312/dati_20240312_2350.csv
+Running...
+Done!
+
+Fri Mar 15 18:00:11 CET 2024
+20240313_2350
+20240313_2350
+/volume1/web/dati_rete/20240313/dati_20240313_2350.csv
+Running...
+Done!
