@@ -231,11 +231,6 @@ class MeteoMap:
         weighted_var = np.nansum(weights) / (np.nansum(d_w * z_w))
         return weighted_var
 
-        # cmap_temp
-
-    # interp_var = interp_var - 273
-    # interp_var = np.full([dem.Band1.values.shape[0], dem.Band1.values.shape[1]], np.nan)
-
     # Interpolation
     def interpolator(
         self, station_coordinates, grid_longitude, grid_latitude, grid_elevation, elev
@@ -256,7 +251,6 @@ class MeteoMap:
                         z_w = 1
                     field[i, j] = self.compute_weighted_var(d_w, z_w, self.var2int)
                 else:
-                    # self.interp_var[i, j] = np.nan
                     field[i, j] = np.nan
         field = field - self.offset
         return field
@@ -312,7 +306,6 @@ class MeteoMap:
         cbar = fig.colorbar(
             filled_c, orientation="vertical", extend="both",ticks=self.levels
         ).set_ticklabels(list(self.levels)) # ,spacing='uniform',ticks= levels)
-        # fig.colorbar.set_tick
 
         for t in range(len(station_coordinates)):
             plt.text(
@@ -331,7 +324,6 @@ class MeteoMap:
             horizontalalignment="right",
             transform=ccrs.epsg(32632),
         )
-        # print('REggio',self.gdf[self.gdf['stazione']=='Reggio Emilia'].geometry.x+4000,self.gdf[self.gdf['stazione']=='Reggio Emilia'].geometry.y-2000,)
 
         plt.text(
             613537,  # self.gdf[self.gdf['stazione']=='Carnola - C.Monti'].geometry.x+2000,
@@ -340,22 +332,12 @@ class MeteoMap:
             horizontalalignment="right",
             transform=ccrs.epsg(32632),
         )
-        plt.title((self.long_name+' '+self.date+'\nwww.reggioemiliameteo.it')).set_size(14)
+        plt.title((f'{self.long_name}\n{self.date[6:8]}/{self.date[4:6]}/{self.date[:4]}, ore {self.date[9:11]}:{self.date[11:]}\t\t www.reggioemiliameteo.it')).set_size(14)
         logo = image.imread('/volume1/web/images/reggioemiliameteo-logo-mappe.jpg')
         imagebox = OffsetImage(logo, zoom = 0.45)
         ab = AnnotationBbox(imagebox, (644400, 4.90209e06), frameon = False)
         ax.add_artist(ab)
-        # print('Carnola',self.gdf[self.gdf['stazione']=='Carnola - C.Monti'].geometry.x+2000,self.gdf[self.gdf['stazione']=='Carnola - C.Monti'].geometry.y+2000)
 
-        # Use the line contours to place contour labels.
-        # ax.clabel(
-        #     line_c,  # Typically best results when labelling line contours.
-        #     colors=["black"],
-        #     levels=line_c.levels,
-        #     manual=False,  # Automatic placement vs manual placement.
-        #     inline=True,  # Cut the line where the label will be placed.
-        #     fmt=" {:.0f} ".format,  # Labes as integers, with some extra space.
-        # )
         fig.savefig(
                 f"{args.output}/{args.variable}/{args.date[:-5]}/mappa_{self.name}_{self.date}.png",
             bbox_inches="tight",
