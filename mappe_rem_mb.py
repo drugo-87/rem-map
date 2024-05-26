@@ -32,14 +32,14 @@ parser = argparse.ArgumentParser()
 parser.add_argument(
     "-v",
     "--variable",
-    help="the current variable implemented are ['temp_max', 'temp_min', 'rain_day', 'wind_gust_max']",
+    help="the current variable implemented are ['temp_val', 'rain_day', 'slp', 'wind_speed', 'rel_hum', 'wind_gust_max', 'wind_gust', 'temp_wet_bulb']",
 )
 parser.add_argument("-d", "--date", help="Use bash command 'date +%Y%m%d_%H%M' ")
 parser.add_argument(
     "-i", "--input", required=False, help="the data-input folder", default="data/"
 )
 parser.add_argument(
-    "-o", "--output", required=False, help="the output folder", default="maps/archivio/"
+    "-o", "--output", required=False, help="the output folder", default="maps/"
 )
 # parser.print_help()
 args = parser.parse_args()
@@ -47,7 +47,7 @@ args = parser.parse_args()
 # exit()
 # print(args.input, args.output)
 # Defining variables
-variabili = ["temp_max", "temp_min", "rain_day", "wind_gust_max"]
+variabili = ["temp_val", "rain_day", "slp", "wind_speed", "rel_hum", "wind_gust_max", "wind_gust", "temp_wet_bulb"]
 print(args.date)
 args.date = args.date[:-1]+'0'
 print(args.date)
@@ -57,8 +57,8 @@ if args.variable not in variabili:
 
 ##########
 # Reading input
-if not os.path.isdir(f'{args.output}/{args.date[:-5]}/'):
-    os.makedirs(f'{args.output}/{args.date[:-5]}/')
+if not os.path.isdir(f'{args.output}/{args.variable}/{args.date[:-5]}/'):
+    os.makedirs(f'{args.output}/{args.variable}/{args.date[:-5]}/')
 
 try:
     dem = xr.open_dataset(f"data/geo-data/dem100.nc")
@@ -78,8 +78,8 @@ except:
 
 fname = f"data/geo-data/comuni_reggio_Emilia.shp"
 
-tmax = {
-    'name': 'Temperatura massima',
+temp = {
+    'name': 'Temperatura',
     'levels': np.array([-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]),
     'colors': ['#4D005B', '#53006D', '#560088', '#570096', '#5400A8', '#4C00BF', '#4200D1', '#2E00E8', '#2100FA', '#000FFF', 
             '#0027FF', '#0046FF', '#0064FF', '#007CFF', '#009BFF', '#00B9FF', '#00D1FF', '#00F0FF', '#00FAF0', '#01F3DB',
@@ -91,9 +91,9 @@ tmax = {
     'lower_c': "#41004d",
     'over_c' : "#72299B",
     'space': 2,
-    'halving_h' : 15000}
-tmin = {
-    'name': 'Temperatura minima',
+    'halving_h' : 3000}
+tempwb = {
+    'name': 'Temperatura bulbo umido',
     'levels': np.array([-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]),
     'colors': ['#4D005B', '#53006D', '#560088', '#570096', '#5400A8', '#4C00BF', '#4200D1', '#2E00E8', '#2100FA', '#000FFF', 
             '#0027FF', '#0046FF', '#0064FF', '#007CFF', '#009BFF', '#00B9FF', '#00D1FF', '#00F0FF', '#00FAF0', '#01F3DB',
@@ -105,17 +105,26 @@ tmin = {
     'lower_c': "#41004d",
     'over_c' : "#72299B",
     'space': 2,
-    'halving_h' : 15000}
+    'halving_h' : 3000}
 prp = {
-    'name': 'Precipitazioni', 
+    'name': 'Precipitazione', 
     'levels': np.array([0.2, 1, 2, 5, 10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300]),
     'colors': ['#D6FFFB', '#D6E1FF', '#B4CAFC', '#8DB2FF', '#859BFF', '#636FFF', '#0160FF' , '#019595', '#00C635', '#66FD00', '#96FF00', '#C6FF30', '#FFFF00', '#FFC600', '#FEA201', '#FF0000', '#B200FF', '#FF00DC'],
     'offset': 0,
     'lower_c': "#FFFFFF",
     'over_c' : "#FF00FF",
     'space': 301,
-    'halving_h' : 3000}
+    'halving_h' : 5000}
 wgust = {
+    'name': 'Raffica', 
+    'levels': np.array([1,3,7,12,20,30,40,51,63,76,88,103,117,150]),
+    'colors': ["#EBF5FF", "#BAE9FF", "#77C6FF", "#5EFFFD", "#A9E786", "#53D559", "#31AC2D", "#FFBD11", "#FD9A00", "#FF4522", "#A70000", "#FF98FF", "#FD4CFF", "#9E30A0"],
+    'offset': 0,
+    'lower_c': "#FFFFFF",
+    'over_c' : "#FFFF00",
+    'space': 120,
+    'halving_h' : 5000}
+wgustmax = {
     'name': 'Raffica massima', 
     'levels': np.array([1,3,7,12,20,30,40,51,63,76,88,103,117,150]),
     'colors': ["#EBF5FF", "#BAE9FF", "#77C6FF", "#5EFFFD", "#A9E786", "#53D559", "#31AC2D", "#FFBD11", "#FD9A00", "#FF4522", "#A70000", "#FF98FF", "#FD4CFF", "#9E30A0"],
@@ -123,13 +132,24 @@ wgust = {
     'lower_c': "#FFFFFF",
     'over_c' : "#FFFF00",
     'space': 120,
-    'halving_h' : 10000}
+    'halving_h' : 5000}
+rh = {
+    'name': 'Umidità relativa', 
+    'levels': np.array([5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]),
+    'colors': ["#E8CDEC", "#DF9FED", "#CE66D9", "#D060AA", "#D66B63", "#E27F21", "#EA9518", "#F2B246", "#FFD694", "#FFF3E5", "#F8FFFF", "#E1FFFF", "#C0FFFD", "#A5FCF6", "#81E7FD", "#5CCAFB", "#3FA4FE", "#125EFF", "#000EFF"],
+    'offset': 0,
+    'lower_c': "#D6CCD7",
+    'over_c' : "#FFFF00",
+    'space': 101,
+    'halving_h' : 5000}
 
 meteo_set = {
-    "temp_max": tmax,
-    "temp_min": tmin,
+    "temp_val": temp,
+    "temp_wet_bulb": tempwb,
     "rain_day": prp,
-    "wind_gust_max": wgust,
+    "wind_gust": wgust,
+    "wind_gust_max": wgustmax,
+    "rel_hum": rh,
 }
 
 
@@ -196,7 +216,7 @@ class MeteoMap:
     def compute_elevation_weight(self, z_stations, z_grid):
         if np.isnan(z_grid) == False:
             disl = (
-                abs(z_stations - z_grid) / 200
+                abs(z_stations - z_grid) / 250
             )  # pick the appropriate distance metric
             dist_z = np.exp(-disl[0])
         else:
@@ -225,7 +245,7 @@ class MeteoMap:
                         station_coordinates[:, :2],
                         np.array([[grid_longitude[j], grid_latitude[i]]]),
                     )
-                    if (self.name == "temp_max") or (self.name == "temp_min") or (self.name == "wind_gust_max"):
+                    if (self.name == "temp_val") or (self.name == "temp_wet_bulb") or (self.name == "rel_hum") or (self.name == "wind_gust_max") or (self.name == "wind_gust"):
                         z_w = self.compute_elevation_weight(elev, grid_elevation[i][j])
                     else:
                         z_w = 1
@@ -312,14 +332,14 @@ class MeteoMap:
             horizontalalignment="right",
             transform=ccrs.epsg(32632),
         )
-        plt.title((f'{self.long_name}\n{self.date[6:8]}/{self.date[4:6]}/{self.date[:4]}                                                                          www.reggioemiliameteo.it')).set_size(14)     
+        plt.title((f'{self.long_name}\n{self.date[6:8]}/{self.date[4:6]}/{self.date[:4]}, ore {self.date[9:11]}:{self.date[11:]}                                                      www.reggioemiliameteo.it')).set_size(14)
         logo = image.imread('/volume1/web/images/reggioemiliameteo-logo-mappe.jpg')
         imagebox = OffsetImage(logo, zoom = 0.45)
         ab = AnnotationBbox(imagebox, (644400, 4.90209e06), frameon = False)
         ax.add_artist(ab)
 
         fig.savefig(
-                f"{args.output}/{args.date[:-5]}/mappa_{self.name}_{self.date}.png",
+                f"{args.output}/{args.variable}/{args.date[:-5]}/mappa_{self.name}_{self.date}.png",
             bbox_inches="tight",
             transparent=False,
         )
