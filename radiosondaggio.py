@@ -27,14 +27,14 @@ import warnings
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-m", "--mode", help="Choose running modality ['archive', 'standard']", default="data/")
+parser.add_argument("-m", "--mode", help="Choose running modality ['archivio', 'prof_vert']", default="data/")
 parser.add_argument("-d", "--date", help="Use bash command 'date +%Y%m%d_%H%M' ")
 parser.add_argument("-i", "--input", required=False, help="the data-input folder", default="data/")
 parser.add_argument("-o", "--output", required=False, help="the output folder", default="maps/")
 # parser.print_help()
 args = parser.parse_args()
 
-running_modality = ['archive', 'standard']
+running_modality = ['archivio', 'prof_vert']
 if args.mode not in running_modality:
     print(f"{args.mode} is not present in the running modality")
     exit()
@@ -89,7 +89,7 @@ if not sorted_data['temp_wet_bulb'].isna().all():
 plt.gca()
 plt.ylim([0, 2100])
 
-if args.mode == "archive":
+if args.mode == "archivio":
     month = sorted_data['datetime'].dt.month.iloc[0]
     if month in [12, 1, 2]:  # Inverno
         x_range = [-35, 20]
@@ -107,7 +107,7 @@ plt.grid(True)
 
 try:
     fig.savefig(
-            f"{args.output}/profilo_verticale_{args.mode}_{args.date}.png",
+            f"{args.output}/{args.mode}/prof_vert_{args.date}.png",
             bbox_inches="tight",
             transparent=False,
         )
