@@ -19,6 +19,8 @@ from cartopy.io.shapereader import Reader
 from cartopy.feature import ShapelyFeature
 import os
 import warnings
+import matplotlib.image as image
+from matplotlib.offsetbox import (OffsetImage, AnnotationBbox)
 
 # warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -30,7 +32,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument(
     "-v",
     "--variable",
-    help="the current variable implemented are ['temp_val', 'rain_rate_max', 'slp', 'wind_speed', 'rel_hum']",
+    help="the current variable implemented are ['temp_val', 'rain_day', 'slp', 'wind_speed', 'rel_hum']",
 )
 parser.add_argument("-d", "--date", help="Use bash command 'date +%Y%m%d_%H%M' ")
 parser.add_argument(
@@ -45,20 +47,27 @@ args = parser.parse_args()
 # exit()
 # print(args.input, args.output)
 # Defining variables
-variabili = ["temp_val", "rain_rate_max", "slp", "wind_speed", "rel_hum"]
+variabili = ["temp_val", "rain_day", "slp", "wind_speed", "rel_hum"]
+print(args.date)
+args.date = args.date[:-1]+'0'
+print(args.date)
 if args.variable not in variabili:
     print(f"{args.variable} is not present in the variable list")
     exit()
 
 ##########
 # Reading input
+if not os.path.isdir(f'{args.output}/{args.variable}/{args.date[:-5]}/'):
+    os.makedirs(f'{args.output}/{args.variable}/{args.date[:-5]}/')
+
 try:
     dem = xr.open_dataset(f"data/geo-data/dem100.nc")
 except:
     print("Something went wrong, can't find dem file")
     exit()
 try:
-    df = pd.read_csv(f"data/dati_20230518_1820.csv", na_values="NA")
+    df = pd.read_csv(f"{args.input}{args.date[:-5]}/dati_{args.date}.csv", na_values="NA").dropna(subset=args.variable)
+    print(f"{args.input}{args.date[:-5]}/dati_{args.date}.csv")
     df_geo = gpd.GeoDataFrame(
         df, geometry=gpd.points_from_xy(x=df.lon, y=df.lat), crs="EPSG:4326"
     ).to_crs("EPSG:32632")
@@ -81,9 +90,9 @@ temp = {
     'offset': 273,
     'lower_c': "#41004d",
     'over_c' : "#72299B",
-    'space': 5}
+    'space': 2}
 prp = {
-    'name': 'rain_rate_max', 
+    'name': 'rain_day', 
     'levels': np.array([0.2, 2, 3, 5, 7, 10, 15, 20, 30, 40, 50, 60, 70, 80, 100, 125, 150, 175, 200, 250, 300]),
     'colors': ['#C0C0C0', '#D6E2FF', '#B5C9FF', '#8EB2FF', '#7F96FF', '#6370F7', '#009E1E' , '#3CBC3D','#B3D16E', '#B9F96E', '#FEFEA0', '#FFF914', '#FFA30A', '#E50000', '#BD0000', '#D464C3', '#B5199D', '#840094', '#B4B4B4', '#8C8C8C', '#5A5A5A'],
     'offset': 0,
@@ -109,7 +118,7 @@ rh = {
 
 meteo_set = {
     "temp_val": temp,
-    "rain_rate_max": prp,
+    "rain_day": prp,
     "wind_speed": wind,
     "rel_hum": rh,
 }
@@ -298,6 +307,11 @@ class MeteoMap:
             horizontalalignment="right",
             transform=ccrs.epsg(32632),
         )
+        plt.title(('www.reggioemiliameteo.it \n'+self.date)).set_size(12)
+        logo = image.imread('/volume1/web/images/reggioemiliameteo-logo.jpg')
+        imagebox = OffsetImage(logo, zoom = 0.45)
+        ab = AnnotationBbox(imagebox, (644400, 4.90209e06), frameon = False)
+        ax.add_artist(ab)
         # print('Carnola',self.gdf[self.gdf['stazione']=='Carnola - C.Monti'].geometry.x+2000,self.gdf[self.gdf['stazione']=='Carnola - C.Monti'].geometry.y+2000)
 
         # Use the line contours to place contour labels.
@@ -310,7 +324,7 @@ class MeteoMap:
         #     fmt=" {:.0f} ".format,  # Labes as integers, with some extra space.
         # )
         fig.savefig(
-            f"maps/mappa_{self.name}_{self.date}.png",
+                f"{args.output}/{args.variable}/{args.date[:-5]}/mappa_{self.name}_{self.date}.png",
             bbox_inches="tight",
             transparent=False,
         )
