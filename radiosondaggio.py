@@ -1,22 +1,22 @@
 import numpy as np
-import math
-import xarray as xr
+# import math
+# import xarray as xr
 import pandas as pd
-import scipy
-import matplotlib as mpl
+# import scipy
+# import matplotlib as mpl
 import matplotlib.pyplot as plt
 import argparse
-import geopandas as gpd
-import cartopy.crs as ccrs
-import cartopy.feature as cfeature
-from matplotlib.colors import (
-    LinearSegmentedColormap,
-    BoundaryNorm,
-    ListedColormap,
-    LogNorm,
-)
-from cartopy.io.shapereader import Reader
-from cartopy.feature import ShapelyFeature
+# import geopandas as gpd
+# import cartopy.crs as ccrs
+# import cartopy.feature as cfeature
+# from matplotlib.colors import (
+#     LinearSegmentedColormap,
+#     BoundaryNorm,
+#     ListedColormap,
+#     LogNorm,
+# )
+# from cartopy.io.shapereader import Reader
+# from cartopy.feature import ShapelyFeature
 import os
 import warnings
 
@@ -104,6 +104,7 @@ plt.ylabel('Quota (m)')
 plt.title(f'Temperatura, Punto di rugiada e Bulbo Umido vs Quota ({sorted_data["datetime"].dt.strftime("%Y-%m-%d").iloc[0]})')
 plt.legend()
 plt.grid(True)
+
 
 try:
     fig.savefig(
