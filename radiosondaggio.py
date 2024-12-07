@@ -146,15 +146,16 @@ plt.ylim([0, 2100])
 plt.xlabel('Gradi (°C)')
 plt.ylabel('Quota (m)')
 plt.title(f'Temperatura, Punto di rugiada e Temperatura di bulbo umido vs Quota \n{sorted_data["datetime"].dt.strftime("%Y-%m-%d %H:%M").iloc[0]}')
-plt.legend()
+plt.legend(loc='upper right')
 
-if zero_flag==True:
-    plt.axhline(y=zero_termico , color='k', linestyle='--', )#label=f'Zero termico')
-    plt.text(sorted_data['temp_val'].iloc[1], zero_termico, f'Zero termico {int(np.round(zero_termico/10)*10)} m', color='black', ha='right', va='bottom', fontsize=8)
-if snow_flag==True:
-    plt.axhline(y=quota_neve, color='teal', linestyle='--',)# label='Quota neve'
-    plt.text(sorted_data['temp_val'].iloc[1], quota_neve, f'Stima quota neve {int(np.round(quota_neve/10)*10)} m', color='teal', ha='right', va='bottom', fontsize=8)
+# if (zero_flag==True) & (quota_neve<2100):
+#     plt.axhline(y=zero_termico , color='k', linestyle='--', )#label=f'Zero termico')
+#     plt.text(sorted_data['temp_val'].iloc[1], zero_termico, f'Zero termico {int(np.round(zero_termico/10)*10)} m', color='black', ha='right', va='bottom', fontsize=8)
+# if  (snow_flag==True) & (quota_neve<2000) :
+#     plt.axhline(y=quota_neve, color='teal', linestyle='--',)# label='Quota neve'
+#     plt.text(sorted_data['temp_val'].iloc[1], quota_neve, f'Stima quota neve {int(np.round(quota_neve/10)*10)} m', color='teal', ha='right', va='bottom', fontsize=8)
 
+plt.grid(True)
 
 try:
     fig.savefig(
