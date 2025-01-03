@@ -1,0 +1,364 @@
+
+Sat Dec  7 18:00:03 CET 2024
+
+Sun Dec  8 00:00:04 CET 2024
+
+Sun Dec  8 06:00:07 CET 2024
+
+Sun Dec  8 12:00:04 CET 2024
+
+Sun Dec  8 18:00:09 CET 2024
+
+Mon Dec  9 00:00:17 CET 2024
+
+Mon Dec  9 06:00:06 CET 2024
+
+Mon Dec  9 12:00:06 CET 2024
+
+Mon Dec  9 18:00:03 CET 2024
+
+Tue Dec 10 00:00:07 CET 2024
+
+Tue Dec 10 06:00:09 CET 2024
+
+Tue Dec 10 12:00:07 CET 2024
+
+Tue Dec 10 18:00:08 CET 2024
+
+Wed Dec 11 00:00:13 CET 2024
+
+Wed Dec 11 06:00:03 CET 2024
+
+Wed Dec 11 12:00:05 CET 2024
+
+Wed Dec 11 18:00:09 CET 2024
+
+Thu Dec 12 00:00:05 CET 2024
+
+Thu Dec 12 06:00:06 CET 2024
+
+Thu Dec 12 12:00:05 CET 2024
+
+Thu Dec 12 18:00:07 CET 2024
+
+Fri Dec 13 00:00:07 CET 2024
+
+Fri Dec 13 06:00:10 CET 2024
+
+Fri Dec 13 12:00:06 CET 2024
+
+Fri Dec 13 18:00:06 CET 2024
+
+Sat Dec 14 00:00:06 CET 2024
+
+Sat Dec 14 06:00:04 CET 2024
+
+Sat Dec 14 12:00:04 CET 2024
+
+Sat Dec 14 18:00:07 CET 2024
+
+Sun Dec 15 00:00:08 CET 2024
+
+Sun Dec 15 06:00:06 CET 2024
+
+Sun Dec 15 12:00:03 CET 2024
+
+Sun Dec 15 18:00:05 CET 2024
+
+Sun Dec 15 22:47:15 CET 2024
+Something went wrong, can't find data file
+
+Sun Dec 15 22:56:07 CET 2024
+Something went wrong, can't find data file
+
+Mon Dec 16 00:10:04 CET 2024
+
+Mon Dec 16 06:10:03 CET 2024
+
+Mon Dec 16 12:10:05 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 2060.7133757961783
+
+Mon Dec 16 18:10:04 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1887.1137985725616
+
+Tue Dec 17 00:10:02 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1664.0768612747725
+
+Tue Dec 17 06:10:02 CET 2024
+Quota stimata correttamente: 1933.5796248253841
+Quota stimata correttamente: 1156.3859649122808
+
+Tue Dec 17 12:10:06 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1614.8430353430354
+
+Tue Dec 17 18:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1744.506329113924
+
+Wed Dec 18 00:10:05 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1599.249054224464
+
+Wed Dec 18 06:10:05 CET 2024
+Quota stimata correttamente: 1784.6810182275299
+Quota stimata correttamente: 1471.3055555555557
+
+Wed Dec 18 12:10:04 CET 2024
+Quota stimata correttamente: 2011.1477064220185
+Quota stimata correttamente: 1759.0891719745223
+
+Wed Dec 18 18:10:04 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1317.4708392603131
+
+Thu Dec 19 00:10:03 CET 2024
+Il primo valore è maggiore di zero
+Il primo valore è maggiore di zero
+
+Thu Dec 19 06:10:03 CET 2024
+Non ci sono valori negativi nei primi mille metri
+Quota stimata correttamente: 1780.2603550295858
+
+Thu Dec 19 12:10:05 CET 2024
+Quota stimata correttamente: 2016.901639344262
+Quota stimata correttamente: 1752.1342788171394
+
+Thu Dec 19 18:10:05 CET 2024
+Quota stimata correttamente: 2048.0250965250966
+Quota stimata correttamente: 1824.762145748988
+
+Fri Dec 20 00:10:03 CET 2024
+Quota stimata correttamente: 2036.5694527961514
+Quota stimata correttamente: 1799.341836734694
+
+Fri Dec 20 06:10:06 CET 2024
+Quota stimata correttamente: 865.1454005934718
+Quota stimata correttamente: 610.5514511873351
+
+Fri Dec 20 12:10:03 CET 2024
+Quota stimata correttamente: 904.4645476772615
+Quota stimata correttamente: 666.6153846153846
+
+Fri Dec 20 18:10:04 CET 2024
+Quota stimata correttamente: 936.559087204564
+Quota stimata correttamente: 645.1530612244898
+
+Sat Dec 21 00:10:02 CET 2024
+Quota stimata correttamente: 957.2702702702702
+Quota stimata correttamente: 277.7909836065574
+
+Sat Dec 21 06:10:03 CET 2024
+Quota stimata correttamente: 860.0348652931854
+Non ci sono abbastanza punti per regressione
+
+Sat Dec 21 12:10:05 CET 2024
+Quota stimata correttamente: 1193.57697707066
+Quota stimata correttamente: 703.6396396396395
+
+Sat Dec 21 18:10:03 CET 2024
+Quota stimata correttamente: 1091.2727272727273
+Non ci sono abbastanza punti per regressione
+
+Sun Dec 22 00:10:05 CET 2024
+Quota stimata correttamente: 1288.8951093951093
+Non ci sono abbastanza punti per regressione
+
+Sun Dec 22 06:10:02 CET 2024
+Quota stimata correttamente: 1343.8876221498372
+Non ci sono abbastanza punti per regressione
+
+Sun Dec 22 12:10:04 CET 2024
+Quota stimata correttamente: 1544.178937839469
+Quota stimata correttamente: 1298.9569597069597
+
+Sun Dec 22 18:10:03 CET 2024
+Quota stimata correttamente: 1670.9419388284086
+Quota stimata correttamente: 1390.4448493683187
+
+Mon Dec 23 00:10:02 CET 2024
+Quota stimata correttamente: 919.5503875968992
+Non ci sono abbastanza punti per regressione
+
+Mon Dec 23 06:10:02 CET 2024
+Quota stimata correttamente: 859.4358974358973
+Non ci sono abbastanza punti per regressione
+
+Mon Dec 23 12:10:04 CET 2024
+Quota stimata correttamente: 1156.857142857143
+Quota stimata correttamente: 562.2242744063325
+
+Mon Dec 23 18:10:04 CET 2024
+Quota stimata correttamente: 1114.888888888889
+Quota stimata correttamente: 499.9599156118144
+
+Tue Dec 24 00:10:03 CET 2024
+Quota stimata correttamente: 987.1654676258993
+Quota stimata correttamente: 283.6071428571429
+
+Tue Dec 24 06:10:04 CET 2024
+Quota stimata correttamente: 1025.4474929044466
+Non ci sono abbastanza punti per regressione
+
+Tue Dec 24 12:10:05 CET 2024
+Quota stimata correttamente: 1388.206560738083
+Quota stimata correttamente: 601.8814432989691
+
+Tue Dec 24 18:10:05 CET 2024
+Quota stimata correttamente: 1156.6064516129034
+Non ci sono abbastanza punti per regressione
+
+Wed Dec 25 00:10:03 CET 2024
+Quota stimata correttamente: 1135.664519742369
+Quota stimata correttamente: 324.0586569579288
+
+Wed Dec 25 06:10:03 CET 2024
+Quota stimata correttamente: 1208.8031496062993
+Non ci sono abbastanza punti per regressione
+
+Wed Dec 25 12:10:03 CET 2024
+Quota stimata correttamente: 1551.5402525651143
+Quota stimata correttamente: 658.1658767772512
+
+Wed Dec 25 18:10:04 CET 2024
+Quota stimata correttamente: 1371.638825149151
+Quota stimata correttamente: 393.9761904761905
+
+Thu Dec 26 00:10:03 CET 2024
+Quota stimata correttamente: 1123.542932628798
+Non ci sono abbastanza punti per regressione
+
+Thu Dec 26 06:10:04 CET 2024
+Quota stimata correttamente: 1152.6666666666667
+Non ci sono abbastanza punti per regressione
+
+Thu Dec 26 12:10:04 CET 2024
+Quota stimata correttamente: 1407.6193293885601
+Quota stimata correttamente: 640.1208791208792
+
+Thu Dec 26 18:10:04 CET 2024
+Quota stimata correttamente: 1431.6775956284152
+Non ci sono abbastanza punti per regressione
+
+Fri Dec 27 00:10:03 CET 2024
+Quota stimata correttamente: 1698.0071556350626
+Non ci sono abbastanza punti per regressione
+
+Fri Dec 27 06:10:04 CET 2024
+Quota stimata correttamente: 1166.328767123288
+Non ci sono abbastanza punti per regressione
+
+Fri Dec 27 12:10:04 CET 2024
+Quota stimata correttamente: 1848.4789915966387
+Quota stimata correttamente: 1163.955223880597
+
+Fri Dec 27 18:10:05 CET 2024
+Quota stimata correttamente: 1834.3783783783783
+Quota stimata correttamente: 933.5590327169275
+
+Sat Dec 28 00:10:04 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 690.6666666666666
+
+Sat Dec 28 06:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1708.7839805825242
+
+Sat Dec 28 12:10:04 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1907.403374233129
+
+Sat Dec 28 18:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1794.7572614107885
+
+Sun Dec 29 00:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1088.4223263075723
+
+Sun Dec 29 06:10:04 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1731.751256281407
+
+Sun Dec 29 12:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1897.8560885608856
+
+Sun Dec 29 18:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1684.2983870967741
+
+Mon Dec 30 00:10:02 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1339.5833333333335
+
+Mon Dec 30 06:10:04 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1141.1023294509152
+
+Mon Dec 30 12:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1861.985736925515
+
+Mon Dec 30 18:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1234.888349514563
+
+Tue Dec 31 00:10:03 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1134.3007518796992
+
+Tue Dec 31 06:10:05 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 996.7580437580438
+
+Tue Dec 31 12:10:06 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1545.4075716234654
+
+Tue Dec 31 18:10:04 CET 2024
+Il primo valore è maggiore di zero
+Quota stimata correttamente: 1038.9863945578231
+
+Wed Jan  1 00:10:04 CET 2025
+Quota stimata correttamente: 1816.6304520222045
+Quota stimata correttamente: 1112.4853051996986
+
+Wed Jan  1 06:10:03 CET 2025
+Quota stimata correttamente: 1409.3798586572439
+Quota stimata correttamente: 1000.2571428571429
+
+Wed Jan  1 12:10:04 CET 2025
+Quota stimata correttamente: 1710.8153153153155
+Quota stimata correttamente: 1471.4220818291215
+
+Wed Jan  1 18:10:06 CET 2025
+Quota stimata correttamente: 1561.877034358047
+Quota stimata correttamente: 1189.8891820580475
+
+Thu Jan  2 00:10:03 CET 2025
+Quota stimata correttamente: 1462.57354925776
+Quota stimata correttamente: 1100.107305936073
+
+Thu Jan  2 06:10:05 CET 2025
+Quota stimata correttamente: 1498.4158004158005
+Quota stimata correttamente: 1229.003861003861
+
+Thu Jan  2 12:10:03 CET 2025
+Quota stimata correttamente: 1505.637608397992
+Quota stimata correttamente: 1255.1174089068825
+
+Thu Jan  2 18:10:02 CET 2025
+Quota stimata correttamente: 1784.890410958904
+Quota stimata correttamente: 1564.9114173228347
+
+Fri Jan  3 00:10:05 CET 2025
+Quota stimata correttamente: 1685.9139784946237
+Quota stimata correttamente: 1469.3510054844608
+
+Fri Jan  3 06:10:02 CET 2025
+Valore presente
+Quota stimata correttamente: 1534.8454833597466
